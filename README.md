@@ -1,10 +1,10 @@
-# ✈️ VAAYU — Flight Routing & Reservation Engine
+# VAAYU — Flight Routing & Reservation Engine
 
 VAAYU is a modern C++ console application designed to simulate intelligent flight routing, fare calculation, and itinerary reservation. By leveraging Object-Oriented Programming (OOP) principles and graph traversal algorithms, VAAYU dynamically evaluates direct and connecting flight options from live CSV datasets while adjusting pricing based on passenger status, seat class, and travel priority.
 
 ---
 
-## 🌟 Key Features
+## Key Features
 
 * **Graph-Based Route Engine**: Uses Depth-First Search (DFS) on adjacency matrices to compute optimal paths across domestic and international airports, accounting for layovers and connection times.
 * **Dynamic Fare Calculation**: Multiplies base fares according to selected seat tier (*Economy*, *Business*, *First Class*) and applies layover overheads.
@@ -15,7 +15,7 @@ VAAYU is a modern C++ console application designed to simulate intelligent fligh
 
 ---
 
-## 🏗️ System Architecture
+## System Architecture
 
 The codebase adheres strictly to core Object-Oriented Programming (OOP) principles:
 
@@ -55,7 +55,7 @@ The codebase adheres strictly to core Object-Oriented Programming (OOP) principl
 
 ---
 
-## 📊 Fare & Class Pricing Rules
+## Fare & Class Pricing Rules
 
 ### Seat Multipliers
 | Class | Fare Multiplier |
@@ -75,7 +75,7 @@ The codebase adheres strictly to core Object-Oriented Programming (OOP) principl
 
 ---
 
-## 📁 `flights.csv` Dataset Format
+## `flights.csv` Dataset Format
 
 The program expects a `flights.csv` file located in the working execution directory. The file should be structured as follows:
 
@@ -94,7 +94,7 @@ BOM,JFK,Emirates,Connecting,12500,16h 30m,850,USD
 
 ---
 
-## 🛠️ Build and Execution Instructions
+## Build and Execution Instructions
 
 ### Prerequisites
 * **Operating System**: Windows (required for `<windows.h>` API calls).
@@ -119,7 +119,7 @@ g++ -std=c++11 VAAYUnew.cpp -o vaayu.exe
 
 ---
 
-## 💻 Sample Interaction Workflow
+## Sample Interaction Workflow
 
 1. **Start System**: Main menu loads and parses route data from `flights.csv`.
 2. **Passenger Details**: Select passenger type (`1: Frequent Flyer`, `2: Guest`), enter wallet balance, select seat class, and choose travel domain (`Domestic` or `International`).
@@ -128,7 +128,3 @@ g++ -std=c++11 VAAYUnew.cpp -o vaayu.exe
 5. **Itinerary Render**: The system presents up to 3 recommended options with detailed routes, duration, layovers, total fare, and booking status depending on available wallet funds.
 
 ---
-
-## 📜 License
-
-Distributed under the MIT License. Feel free to modify and expand for academic or portfolio projects!
